@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;0,800;1,300&display=swap');
 
-
+:root {
+    --bg-gray: #ddd;
+    --color-primary: #4d41c0;
+    --white: #ffff;
+}
 
 *{
     box-sizing: border-box;
@@ -9,16 +13,21 @@ font-family: "Open Sans";
    
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
 html, body{
 
-    background-color: #ddd;
+    background-color: var(--bg-gray)
 }
 
 
 header {
 color: #ffff;    
-background-color: #4d41c0
-
+background-color: var(--color-primary);
+height: 60px;
+display: flex;
+align-items: center;
 }
 
 nav {
@@ -27,6 +36,18 @@ nav {
     justify-content: space-between;
 }
 
+nav h1 {
+
+    font-size: 24px;
+    font-weight: 700;
+}
+
+nav a {
+
+    font-size: 12px;
+    font-weight: 400
+
+}
 
 a, a:hover {
     text-decoration: none;
