@@ -3,11 +3,32 @@
 
 
 *{
+    box-sizing: border-box;
 font-family: "Open Sans";
 
+   
+}
+
+html, body{
+
+    background-color: #ddd;
+}
 
 
+header {
+color: #ffff;    
+background-color: #4d41c0
 
 }
 
-font-famil
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+a, a:hover {
+    text-decoration: none;
+    color: unset;
+}
